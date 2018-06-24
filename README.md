@@ -8,7 +8,7 @@ lets start with some installation
 
 ```console
 npm install redux --save
-npm install @angular-redux/store@^9 // for angular 6 or ^7 for angular 5
+npm install @angular-redux/store@^9 // use ^7 for angular 5
 
 ```
 
