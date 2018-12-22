@@ -1,7 +1,7 @@
 import { combineReducers, Reducer } from 'redux';
-import { AppState } from "src/app/store/models";
-import todoReducer from "src/app/todo-list/reducer";
-import loginReducer from "src/app/login/reducer";
+import { AppState } from "./models";
+import todoReducer from "../todo-list/todo-list-state-management/reducer";
+import loginReducer from "../login/login-state-management/reducer";
 
 // reducers together into a given structure.
 export const rootReducer: Reducer<AppState> = combineReducers({
