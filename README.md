@@ -1,7 +1,7 @@
 # Angular Redux Example
 
 This is a POC project to learn how redux is integrated with Angular and RxJs.</br>
-This is a todo list project based on https://github.com/sitepoint-editors/angular-todo-app 
+todo style based on https://github.com/sitepoint-editors/angular-todo-app 
 
 ### How to use redux with Angular
 lets start with some installation
