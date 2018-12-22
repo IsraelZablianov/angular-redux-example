@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from "@angular/router";
-import { UserCredentials } from "src/app/models";
+import { UserCredentials } from "./login-state-management/models";
 import { dispatch } from "@angular-redux/store";
-import { login } from "../actions";
+import { login } from "./login-state-management/actions";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.less']
 })
 export class LoginComponent {
   credentials: UserCredentials = {

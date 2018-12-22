@@ -6,9 +6,10 @@ import { TodoListModule } from "./todo-list/todo-list.module";
 import { StoreModule } from "src/app/store/module";
 import { MaterialModule } from './material.module';
 import { RouterModule } from '@angular/router';
-import { LoginModule } from "src/app/login/login.module";
-import { LoginComponent } from "src/app/login/login/login.component";
-import { TodoListComponent } from "src/app/todo-list/todo-list/todo-list.component";
+import { LoginModule } from "../app/login/login.module";
+import { LoginComponent } from "../app/login/login.component";
+import { TodoListComponent } from "../app/todo-list/todo-list/todo-list.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TodoListComponent } from "src/app/todo-list/todo-list/todo-list.compone
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     MaterialModule,
     RouterModule.forRoot([

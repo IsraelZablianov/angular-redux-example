@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { TodoItem } from "src/app/models";
-import { removeTodoItem } from "src/app/todo-list/actions";
+import { TodoItem } from "../todo-list-state-management/models";
+import { removeTodoItem } from "../todo-list-state-management/actions";
 import { dispatch } from "@angular-redux/store";
 
 @Component({
   selector: 'todo-list-item',
   templateUrl: './todo-list-item.component.html',
-  styleUrls: ['./todo-list-item.component.css']
+  styleUrls: ['./todo-list-item.component.less']
 })
 export class TodoListItemComponent {
   @Input()

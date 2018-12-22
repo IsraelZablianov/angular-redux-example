@@ -1,7 +1,7 @@
-import { LoginActions } from "src/app/login/actions";
-import { UserCredentials } from "src/app/models";
+import { LoginActions } from "./actions";
+import { UserCredentials } from "./models";
 import constants from "./constants";
-
+ 
 export interface LoginState {
     credentials: UserCredentials;
 }

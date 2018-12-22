@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoItem } from "src/app/models";
-import { addTodoItem } from "src/app/todo-list/actions";
+import { TodoItem } from "../todo-list-state-management/models";
+import { addTodoItem } from "../todo-list-state-management/actions";
 import { dispatch, select } from "@angular-redux/store";
-import { AppState } from "src/app/store/models";
+import { AppState } from "../../store/models";
 import { Observable } from "rxjs";
 
 @Component({
   selector: 'todo-list',
   templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.css']
+  styleUrls: ['./todo-list.component.less']
 })
 export class TodoListComponent implements OnInit {
   public newTodo: TodoItem = this.getEmptyTodoItem();
